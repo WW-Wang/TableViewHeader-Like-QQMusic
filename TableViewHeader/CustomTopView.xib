@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="DwW-OM-WLD" customClass="CustomTopView">
+            <rect key="frame" x="0.0" y="0.0" width="513" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                    <rect key="frame" x="0.0" y="0.0" width="513" height="200"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apR-v8-uhQ" customClass="DCRoundedButton">
+                            <rect key="frame" x="463" y="30" width="50" height="60"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="uof-TP-VDK"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addressButtonClicked:" destination="DwW-OM-WLD" eventType="touchUpInside" id="cIo-3J-Ypp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1Q-jL-bxA" customClass="DCRoundedButton">
+                            <rect key="frame" x="483" y="113" width="30" height="55"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="h7p-bj-118"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="electionButtonClicked:" destination="DwW-OM-WLD" eventType="touchUpInside" id="ww7-Pb-aWA"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqt-Ew-3kK" customClass="DCDateCircleView">
+                            <rect key="frame" x="10" y="40" width="433" height="120"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="boarderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="apR-v8-uhQ" firstAttribute="leading" secondItem="Hqt-Ew-3kK" secondAttribute="trailing" constant="20" id="2ox-A8-KeR"/>
+                        <constraint firstItem="Hqt-Ew-3kK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="4Xj-V7-YdM"/>
+                        <constraint firstAttribute="centerY" secondItem="Hqt-Ew-3kK" secondAttribute="centerY" id="8gk-O1-mYo">
+                            <variation key="heightClass=compact" constant="-10"/>
+                        </constraint>
+                        <constraint firstAttribute="centerY" secondItem="apR-v8-uhQ" secondAttribute="centerY" constant="40" id="Br4-kO-K2t">
+                            <variation key="heightClass=compact" constant="30"/>
+                        </constraint>
+                        <constraint firstAttribute="width" secondItem="Hqt-Ew-3kK" secondAttribute="width" multiplier="2:1" id="DgM-8i-fiA"/>
+                        <constraint firstAttribute="height" secondItem="Hqt-Ew-3kK" secondAttribute="height" multiplier="5:3.5" id="JBs-mQ-JX5"/>
+                        <constraint firstItem="G1Q-jL-bxA" firstAttribute="leading" secondItem="apR-v8-uhQ" secondAttribute="leading" constant="20" id="Kj9-Jj-5j6"/>
+                        <constraint firstAttribute="trailing" secondItem="apR-v8-uhQ" secondAttribute="trailing" id="Osa-gI-Xl5"/>
+                        <constraint firstAttribute="height" secondItem="Hqt-Ew-3kK" secondAttribute="height" multiplier="5:3" id="ZAR-Fi-OIa"/>
+                        <constraint firstAttribute="width" secondItem="Hqt-Ew-3kK" secondAttribute="width" multiplier="3:0.9" id="mf8-Nc-Xfb"/>
+                        <constraint firstAttribute="trailing" secondItem="G1Q-jL-bxA" secondAttribute="trailing" id="oVv-ry-XOU"/>
+                        <constraint firstAttribute="centerY" secondItem="G1Q-jL-bxA" secondAttribute="centerY" constant="-40" id="ug8-HS-Ew3">
+                            <variation key="heightClass=compact" constant="-50"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="DgM-8i-fiA"/>
+                            <exclude reference="JBs-mQ-JX5"/>
+                            <exclude reference="mf8-Nc-Xfb"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <include reference="DgM-8i-fiA"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="JBs-mQ-JX5"/>
+                            <exclude reference="ZAR-Fi-OIa"/>
+                            <include reference="mf8-Nc-Xfb"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="DwW-OM-WLD" secondAttribute="top" id="083-hR-vMn"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="DwW-OM-WLD" secondAttribute="leading" id="Gbn-vS-DA7"/>
+                <constraint firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="YRG-97-7YM"/>
+                <constraint firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="t0W-9A-j5g"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressButton" destination="apR-v8-uhQ" id="uTK-Yo-RqC"/>
+                <outlet property="dateView" destination="Hqt-Ew-3kK" id="G5Q-rP-Qew"/>
+                <outlet property="electionButton" destination="G1Q-jL-bxA" id="9yf-2W-EKu"/>
+            </connections>
+            <point key="canvasLocation" x="320" y="-26"/>
+        </view>
+    </objects>
+</document>
